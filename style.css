@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+#phone {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button {
+    padding: 12px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+/* =========================
+   Mobile (0px - 480px)
+========================= */
+@media (max-width: 480px) {
+
+  .personal-container {
+    padding: 10px 4%;
+  }
+
+  .personal-entry {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .entry-content {
+    padding-right: 0;
+  }
+
+  .entry-icon {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .personal-text h1 {
+    font-size: 2rem;
+  }
+
+  .entry-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .entry-content p {
+    font-size: 0.95rem;
+  }
+
+  nav ul.navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul.navbar button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+}
+
+/* =========================
+   Tablet (481px - 768px)
+========================= */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .personal-entry {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .entry-icon {
+    width: 150px;
+    height: auto;
+  }
+
+  .personal-text h1 {
+    font-size: 2.5rem;
+  }
+
+}
+
+/* =========================
+   Laptop (769px - 1023px)
+========================= */
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  .personal-container {
+    padding: 20px 6%;
+  }
+
+  .entry-icon {
+    width: 22%;
+    height: auto;
+  }
+
+}
+
+/* =========================
+   Desktop (1024px+)
+========================= */
+@media (min-width: 1024px) {
+
+  .personal-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 8%;
+  }
+
+  .personal-entry {
+    gap: 30px;
+  }
+
+  .entry-icon {
+    width: 20%;
+    height: auto;
+  }
+
+  .personal-text h1 {
+    font-size: 3rem;
+  }
+
+}
