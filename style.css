@@ -17,8 +17,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
-    /* Your original gradient is kept as an overlay */
-    background-color: #4facfe;
 }
 
 .container {
