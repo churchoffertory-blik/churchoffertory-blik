@@ -16,8 +16,9 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #4facfe;
 
+    /* Your original gradient is kept as an overlay */
+    background-color: black;
 }
 
 .container {
