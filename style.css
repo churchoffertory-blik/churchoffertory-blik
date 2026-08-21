@@ -10,11 +10,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+
+    /* Background Image */
+    background-image: url("background.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Your original gradient is kept as an overlay */
+    background-color: #4facfe;
 }
 
 .container {
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
     padding: 40px;
     border-radius: 15px;
     text-align: center;
